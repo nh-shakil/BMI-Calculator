@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/teal_700"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার ওজন কত?"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:id="@+id/width"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/editbox"
+        android:padding="15dp"
+        android:layout_marginLeft="20dp"
+        android:hint="আপনার ওজন কত?"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="আপনার উচ্চতা কত?"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+        <EditText
+            android:id="@+id/feet"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/editbox"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            android:hint="feet"
+            />
+        <EditText
+            android:id="@+id/inchi"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@drawable/editbox"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:hint="inchi"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="BMA Answer"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/editbox"
+        >
+        <TextView
+            android:id="@+id/dp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/teal_700"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
